@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SMC-WorkFlow</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    background:#f2f2f2;
+}
+
+header{
+    background:#d71920;
+    color:white;
+    padding:40px 20px;
+    text-align:center;
+}
+
+header h1{
+    font-size:48px;
+}
+
+header p{
+    margin-top:10px;
+    font-size:22px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:30px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    padding:30px;
+    margin-bottom:30px;
+    box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+
+button{
+
+    background:#d71920;
+    color:white;
+    border:none;
+    padding:15px 30px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:18px;
+
+}
+
+button:hover{
+
+    background:#b31319;
+
+}
+
+#dashboard{
+
+    display:none;
+
+}
+
+.menu{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:20px;
+
+}
+
+.modulo{
+
+    background:#ffffff;
+
+    border-left:6px solid #d71920;
+
+    padding:20px;
+
+    border-radius:10px;
+
+    box-shadow:0 2px 6px rgba(0,0,0,.15);
+
+}
+
+.modulo h3{
+
+    margin-bottom:10px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>SMC-WorkFlow</h1>
+
+<p>Sistema de Gestión de Producción para Talleres Suzuki</p>
+
+</header>
+
+<div class="container">
+
+<div id="inicio" class="card">
+
+<h2>Bienvenido</h2>
+
+<br>
+
+<p>
+
+Plataforma desarrollada para administrar la producción,
+
+órdenes de trabajo,
+
+control de calidad,
+
+indicadores,
+
+facturación,
+
+garantías,
+
+NPS
+
+y seguimiento postventa.
+
+</p>
+
+<br><br>
+
+<button onclick="ingresar()">
+
+Ingresar al Sistema
+
+</button>
+
+</div>
+
+<div id="dashboard">
+
+<div class="card">
+
+<h2>Panel Principal</h2>
+
+<br>
+
+<div class="menu">
+
+<div class="modulo">
+
+<h3>Recepción</h3>
+
+<p>Ingreso de motocicletas.</p>
+
+</div>
+
+<div class="modulo">
+
+<h3>Producción</h3>
+
+<p>Seguimiento de OT.</p>
+
+</div>
+
+<div class="modulo">
+
+<h3>Técnicos</h3>
+
+<p>Estado en tiempo real.</p>
+
+</div>
+
+<div class="modulo">
+
+<h3>Control Calidad</h3>
+
+<p>Checklist final.</p>
+
+</div>
+
+<div class="modulo">
+
+<h3>Garantías</h3>
+
+<p>Administración de garantías.</p>
+
+</div>
+
+<div class="modulo">
+
+<h3>KPI</h3>
+
+<p>Productividad y eficiencia.</p>
+
+</div>
+
+<div class="modulo">
+
+<h3>NPS</h3>
+
+<p>Satisfacción del cliente.</p>
+
+</div>
+
+<div class="modulo">
+
+<h3>Facturación</h3>
+
+<p>Estado financiero.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+function ingresar(){
+
+document.getElementById("inicio").style.display="none";
+
+document.getElementById("dashboard").style.display="block";
+
+}
+
+</script>
+
+</body>
+
+</html>
